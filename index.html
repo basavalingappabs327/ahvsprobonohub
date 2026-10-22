@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHVS Quick Access Portal - ಡಾ ಬಸವಲಿಂಗಪ್ಪ ಬಿ ಎಸ್</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>ಪಶುಪಾಲನಾ ಮತ್ತು ಪಶುವೈದ್ಯಕೀಯ ಸೇವಾ ಇಲಾಖೆ</h1>
+            <p>ಕ್ಷೇತ್ರ ಮಟ್ಟದ ಆಡಳಿತಾತ್ಮಕ ಮತ್ತು ತಾಂತ್ರಿಕ ಸೇವೆಗಳು</p>
+        </header>
+
+        <!-- Search Box -->
+        <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="searchInput" placeholder="ವಿಷಯವನ್ನು ಹುಡುಕಿ (Search Administration, Rules, Calculators...)">
+        </div>
+
+        <!-- Total Count Display -->
+        <div class="count-info">
+            ಒಟ್ಟು ವಿಷಯಗಳು: <span id="totalCount">0</span>
+        </div>
+
+        <!-- Links Grid -->
+        <div class="grid-container" id="linksGrid">
+            <!-- Data will be loaded dynamically -->
+        </div>
+
+        <div id="noResults" class="no-results" style="display: none;">
+            ಯಾವುದೇ ಫಲಿತಾಂಶಗಳು ಕಂಡುಬಂದಿಲ್ಲ. (No matching items found)
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

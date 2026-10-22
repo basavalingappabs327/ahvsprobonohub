@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    background: #1b5e20;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1rem;
+    color: #c8e6c9;
+}
+
+/* Search Bar Styles */
+.search-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto 15px auto;
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    font-size: 1.2rem;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 14px 20px 14px 45px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#searchInput:focus {
+    border-color: #2e7d32;
+    box-shadow: 0 4px 10px rgba(46, 125, 50, 0.15);
+}
+
+/* Count Info Styles */
+.count-info {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #455a64;
+    text-align: right;
+    padding-right: 5px;
+}
+
+#totalCount {
+    color: #1b5e20;
+    background: #e8f5e9;
+    padding: 2px 8px;
+    border-radius: 4px;
+    border: 1px solid #c8e6c9;
+}
+
+/* Grid & Card Styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 18px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    border-left: 5px solid #2e7d32;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    background-color: #f1f8e9;
+}
+
+.card span {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.card i {
+    color: #2e7d32;
+    font-size: 1rem;
+}
+
+.no-results {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 40px;
+}
