@@ -9,6 +9,7 @@ body {
     background-color: #f0f4f8;
     color: #333;
     padding: 20px;
+    padding-bottom: 60px; /* reserve space so the fixed footer doesn't cover the last table rows */
 }
 
 .container {
@@ -35,6 +36,18 @@ header p {
     font-size: 1rem;
     color: #c8e6c9;
 }
+footer {
+        position:fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color:aqua;
+        color:red;
+        text-align: center;
+        padding:4px; 
+        font-weight:800;
+    
+        }
 
 /* Search Bar Styles */
 .search-container {
